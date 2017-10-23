@@ -67,13 +67,14 @@ class Owner
       pet.each do |value|
         value.mood = "nervous"
       end
+      pet.clear
     end
-    pets.each do |type, pet|
-      pet.delete_if do |value|
-        value.mood == "nervous"
-      end
-    end
-    pets
+    # pets.each do |type, pet|
+    #   pet.delete_if do |value|
+    #     value.mood == "nervous"
+    #   end
+    # end
+    # pets
   end
 
   def list_pets
