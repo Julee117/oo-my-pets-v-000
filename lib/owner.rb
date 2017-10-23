@@ -67,6 +67,7 @@ class Owner
       pet.each do |value|
         value.mood = "nervous"
       end
+      #OR can just put this one liner instead of 2nd set of code below
       # pet.clear
     end
     pets.each do |type, pet|
